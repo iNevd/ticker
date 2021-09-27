@@ -181,6 +181,7 @@ type QuoteSource int
 
 const (
 	QuoteSourceYahoo QuoteSource = iota
+	QuoteSourceEastMoney
 	QuoteSourceUserDefined
 )
 

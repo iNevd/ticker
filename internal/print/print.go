@@ -8,7 +8,7 @@ import (
 
 	"github.com/achannarasappa/ticker/internal/asset"
 	c "github.com/achannarasappa/ticker/internal/common"
-	quote "github.com/achannarasappa/ticker/internal/quote/yahoo"
+	quote "github.com/achannarasappa/ticker/internal/quote/easymoney"
 	"github.com/achannarasappa/ticker/internal/ui/util"
 
 	"github.com/spf13/cobra"

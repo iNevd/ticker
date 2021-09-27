@@ -7,7 +7,7 @@ import (
 	grid "github.com/achannarasappa/term-grid"
 	"github.com/achannarasappa/ticker/internal/asset"
 	c "github.com/achannarasappa/ticker/internal/common"
-	quote "github.com/achannarasappa/ticker/internal/quote/yahoo"
+	quote "github.com/achannarasappa/ticker/internal/quote/easymoney"
 	"github.com/achannarasappa/ticker/internal/ui/component/summary"
 	"github.com/achannarasappa/ticker/internal/ui/component/watchlist"
 

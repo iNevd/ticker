@@ -7,7 +7,7 @@ import (
 
 	"github.com/achannarasappa/ticker/internal/asset"
 	c "github.com/achannarasappa/ticker/internal/common"
-	quoteYahoo "github.com/achannarasappa/ticker/internal/quote/yahoo"
+	quote "github.com/achannarasappa/ticker/internal/quote/easymoney"
 	"github.com/achannarasappa/ticker/internal/ui/util"
 
 	"github.com/adrg/xdg"
@@ -115,7 +115,7 @@ func getReference(config c.Config, client resty.Client) (c.Reference, error) {
 
 	symbols := asset.GetSymbols(config)
 
-	currencyRates, err := quoteYahoo.GetCurrencyRates(client, symbols, config.Currency)
+	currencyRates, err := quote.GetCurrencyRates(client, symbols, config.Currency)
 	styles := util.GetColorScheme(config.ColorScheme)
 
 	return c.Reference{
